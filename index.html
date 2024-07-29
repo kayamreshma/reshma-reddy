@@ -1,116 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reshma Reddy - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .fade-in {
-      animation: fadeIn 2s ease-in-out;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshma Reddy - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-    .flash {
-      animation: flash 1s infinite;
-    }
+        .flash:hover {
+            animation: flash 1s infinite;
+        }
 
-    @keyframes flash {
-      0%,
-      100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-    }
-  </style>
+        @keyframes flash {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
 </head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center fade-in">
+            <h2 class="text-2xl font-bold">Introduction Video</h2>
+            <video class="mx-auto mt-4" width="320" height="240" controls>
+                <source src="introduction_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </header>
 
-<body class="bg-gray-100">
-  <div class="container mx-auto px-4 py-8">
-    <header class="text-center fade-in">
-      <h2 class="text-2xl font-bold">Introduction Video</h2>
-      <video class="mx-auto mt-4" width="320" height="240" controls>
-        <source src="introduction_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </header>
+        <div class="text-center mt-8 fade-in">
+            <img src="profile-pic.jpeg" alt="Profile Picture" class="w-32 h-32 mx-auto rounded-full">
+            <h1 class="text-4xl font-bold mt-4">K. Reshma Reddy</h1>
+            <p class="text-xl">Geneticist | Molecular Biologist | Ph.D. in Clinical Embryology with 2 Years of Experience</p>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <a href="mailto:reshmareddy.rk@gmail.com" class="text-blue-500"><i class="fas fa-envelope"></i> reshmareddy.rk@gmail.com</a>
+                <a href="https://www.linkedin.com/in/reshma-reddy" class="text-blue-500"><i class="fab fa-linkedin"></i> www.linkedin.com/in/reshma-reddy</a>
+                <span class="text-gray-700"><i class="fas fa-phone-alt"></i> +91-9964253549</span>
+                <span class="text-gray-700"><i class="fas fa-map-marker-alt"></i> India</span>
+            </div>
+        </div>
 
-    <div class="text-center mt-8 fade-in">
-      <img src="profile-pic.jpeg" alt="Profile Picture" class="w-32 h-32 mx-auto rounded-full">
-      <h1 class="text-4xl font-bold mt-4">K. Reshma Reddy</h1>
-      <p class="text-xl">Geneticist | Molecular Biologist | Ph.D. in Clinical Embryology with 2 Years of Experience</p>
-      <div class="mt-4 grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-        <a href="mailto:reshmareddy.rk@gmail.com" class="text-blue-500">reshmareddy.rk@gmail.com</a>
-        <a href="https://www.linkedin.com/in/reshma-reddy" class="text-blue-500">www.linkedin.com/in/reshma-reddy</a>
-        <span class="text-gray-700">+91-9964253549</span>
-        <span class="text-gray-700">India</span>
-      </div>
+        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+            <h2 class="text-2xl font-bold">Summary</h2>
+            <p>Geneticist with an MSc in Genetics and pursuing a PhD in clinical embryology, skilled in stem cell counseling and well-versed in embryology from hands-on internships. Seasoned in cancer research and passionate about genetic education as a faculty member for undergraduates.</p>
+        </section>
+
+        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+            <h2 class="text-2xl font-bold">Skills</h2>
+            <ul class="list-disc pl-6">
+                <li><strong>Technical Skills:</strong> AI Tools, Bioinformatics, GitHub, Machine Learning, Microsoft Office</li>
+                <li><strong>Academic Skills:</strong> Genetic Counseling, Literature Review, Mentoring, Program Coordination, Technical Writing</li>
+                <li><strong>Laboratory Skills:</strong> Cryopreservation, Data Recording, Sample Preparation, Semen Processing, Sperm Analysis</li>
+                <li><strong>Research Skills:</strong> Data Analysis, Data Interpretation, Grant Writing, Project Management, Team Collaboration</li>
+            </ul>
+        </section>
+
+        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+            <h2 class="text-2xl font-bold">Work Experience</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">Garden City University (March 2023 - March 2024)</h3>
+                <p><strong>Geneticist:</strong> Conducted lectures, guided research projects, and mentored students to foster critical thinking and advance genetic research in academia.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">Cryoviva Biotech Pvt Ltd (June 2022 - Jan 2023)</h3>
+                <p><strong>Genetic Counselor:</strong> Educated clients on the benefits of stem cell preservation for genetic disorder treatment and improved sales performance.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">GarbhaGudi IVF Center (Feb 2022 - May 2022)</h3>
+                <p><strong>Research Intern:</strong> Conducted andrology analysis, while gaining valuable embryology knowledge through project involvement.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">Stroma Lifesciences Pvt Ltd. (Dec 2021 - June 2022)</h3>
+                <p><strong>Research Project:</strong> Anti-cancer activity targeting cervical and breast cancer.</p>
+            </div>
+        </section>
+
+        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+            <h2 class="text-2xl font-bold">Projects</h2>
+            <ul class="list-disc pl-6">
+                <li><strong>Molecular Docking Simulations of Phytochemicals with Target Proteins:</strong> Investigating the potential of phytochemicals from <em>Sphagneticola trilobata</em> against breast cancer and cervical cancer target proteins. Technologies used: PyMOL, Chimera, Discovery Studio, AutoDock.</li>
+                <li><strong><em>Sphagneticola trilobata</em> (L.): An Enigma of Anticancer Activity:</strong> Identified anticancer activity in cervical and breast cancer cells. Technologies Used: MMT Assay, DPPH, GC-MS (Gas Chromatography-Mass Spectrometry) analysis.</li>
+                <li><strong>The Study on Clinical Pregnancy Rate in Day 3 and Day 5 Embryo Transfers:</strong> Conducted a cross-sectional retrospective study analyzing clinical pregnancy rates in day 3 versus day 5 embryo transfers. Technologies Used: IBM SPSS, Microsoft Excel.</li>
+            </ul>
+        </section>
+
+        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+            <h2 class="text-2xl font-bold">Languages</h2>
+            <p>English, Telugu, Kannada, Hindi</p>
+        </section>
+
+        <section class="mt-8 bg-white text-black p-6 rounded-lg text-center fade-in flash">
+            <a href="Reshma_Reddy_Resume.pdf" download class="text-white bg-blue-500 px-4 py-2 rounded-lg flash">Download CV</a>
+        </section>
     </div>
-
-    <section class="mt-8 bg-yellow-100 p-6 rounded-lg fade-in">
-      <h2 class="text-2xl font-bold">Summary</h2>
-      <p>Geneticist with an MSc in Genetics and pursuing a PhD in clinical embryology, skilled in stem cell counseling and well-versed in embryology from hands-on internships. Seasoned in cancer research and passionate about genetic education as a faculty member for undergraduates.</p>
-    </section>
-
-    <section class="mt-8 bg-green-100 p-6 rounded-lg fade-in">
-      <h2 class="text-2xl font-bold">Skills</h2>
-      <ul class="list-disc pl-6">
-        <li><strong>Technical Skills:</strong> AI Tools, Bioinformatics, GitHub, Machine Learning, Microsoft Office</li>
-        <li><strong>Academic Skills:</strong> Genetic Counseling, Literature Review, Mentoring, Program Coordination, Technical Writing</li>
-        <li><strong>Laboratory Skills:</strong> Cryopreservation, Data Recording, Sample Preparation, Semen Processing, Sperm Analysis</li>
-        <li><strong>Research Skills:</strong> Data Analysis, Data Interpretation, Grant Writing, Project Management, Team Collaboration</li>
-      </ul>
-    </section>
-
-    <section class="mt-8 bg-blue-100 p-6 rounded-lg fade-in">
-      <h2 class="text-2xl font-bold">Work Experience</h2>
-      <div class="mt-4">
-        <h3 class="text-xl font-semibold">Garden City University (March 2023 - March 2024)</h3>
-        <p><strong>Geneticist:</strong> Conducted lectures, guided research projects, and mentored students to foster critical thinking and advance genetic research in academia.</p>
-      </div>
-      <div class="mt-4">
-        <h3 class="text-xl font-semibold">Cryoviva Biotech Pvt Ltd (June 2022 - Jan 2023)</h3>
-        <p><strong>Genetic Counselor:</strong> Educated clients on the benefits of stem cell preservation for genetic disorder treatment and improved sales performance.</p>
-      </div>
-      <div class="mt-4">
-        <h3 class="text-xl font-semibold">GarbhaGudi IVF Center (Feb 2022 - May 2022)</h3>
-        <p><strong>Research Intern:</strong> Conducted andrology analysis, while gaining valuable embryology knowledge through project involvement.</p>
-      </div>
-      <div class="mt-4">
-        <h3 class="text-xl font-semibold">Stroma Lifesciences Pvt Ltd. (Dec 2021 - June 2022)</h3>
-        <p><strong>Research Project:</strong> Anti-cancer activity targeting cervical and breast cancer.</p>
-      </div>
-    </section>
-
-    <section class="mt-8 bg-red-100 p-6 rounded-lg fade-in">
-      <h2 class="text-2xl font-bold">Projects</h2>
-      <ul class="list-disc pl-6">
-        <li><strong>Molecular Docking Simulations of Phytochemicals with Target Proteins:</strong> Investigating the potential of phytochemicals from <em>Sphagneticola trilobata</em> against breast cancer and cervical cancer target proteins. Technologies used: PyMOL, Chimera, Discovery Studio, AutoDock.</li>
-        <li><strong><em>Sphagneticola trilobata</em> (L.): An Enigma of Anticancer Activity:</strong> Identified anticancer activity in cervical and breast cancer cells. Technologies Used: MMT Assay, DPPH, GC-MS (Gas Chromatography-Mass Spectrometry) analysis.</li>
-        <li><strong>The Study on Clinical Pregnancy Rate in Day 3 and Day 5 Embryo Transfers:</strong> Conducted a cross-sectional retrospective study analyzing clinical pregnancy rates in day 3 versus day 5 embryo transfers. Technologies Used: IBM SPSS, Microsoft Excel.</li>
-      </ul>
-    </section>
-
-    <section class="mt-8 bg-purple-100 p-6 rounded-lg fade-in">
-      <h2 class="text-2xl font-bold">Languages</h2>
-      <p>English, Telugu, Kannada, Hindi</p>
-    </section>
-
-    <section class="mt-8 bg-gray-200 p-6 rounded-lg text-center fade-in">
-      <a href="Reshma_Reddy_Resume.pdf" download class="text-white bg-blue-500 px-4 py-2 rounded-lg flash">Download CV</a>
-    </section>
-  </div>
 </body>
-
 </html>
