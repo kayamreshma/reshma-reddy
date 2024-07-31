@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -26,18 +28,40 @@
         }
 
         @keyframes flash {
-            0%, 100% {
+            0%,
+            100% {
                 opacity: 1;
             }
+
             50% {
                 opacity: 0.5;
             }
         }
+
+        .section-bg {
+            background: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+        }
     </style>
 </head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white min-h-screen">
+
+<body class="bg-red-900 text-white min-h-screen">
+    <nav class="bg-red-700 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">Reshma Reddy</div>
+            <ul class="flex space-x-4">
+                <li><a href="#introduction" class="hover:underline">Introduction</a></li>
+                <li><a href="#summary" class="hover:underline">Summary</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#experience" class="hover:underline">Work Experience</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#languages" class="hover:underline">Languages</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container mx-auto px-4 py-8">
-        <header class="text-center fade-in">
+        <header id="introduction" class="text-center fade-in section-bg p-6 rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold">Introduction Video</h2>
             <video class="mx-auto mt-4" width="320" height="240" controls>
                 <source src="introduction_video.mp4" type="video/mp4">
@@ -52,17 +76,17 @@
             <div class="mt-4 grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
                 <a href="mailto:reshmareddy.rk@gmail.com" class="text-blue-500"><i class="fas fa-envelope"></i> reshmareddy.rk@gmail.com</a>
                 <a href="https://www.linkedin.com/in/reshma-reddy" class="text-blue-500"><i class="fab fa-linkedin"></i> www.linkedin.com/in/reshma-reddy</a>
-                <span class="text-gray-700"><i class="fas fa-phone-alt"></i> +91-9964253549</span>
-                <span class="text-gray-700"><i class="fas fa-map-marker-alt"></i> India</span>
+                <span class="text-gray-200"><i class="fas fa-phone-alt"></i> +91-9964253549</span>
+                <span class="text-gray-200"><i class="fas fa-map-marker-alt"></i> India</span>
             </div>
         </div>
 
-        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+        <section id="summary" class="mt-8 bg-red-100 text-black p-6 rounded-lg shadow-lg fade-in flash">
             <h2 class="text-2xl font-bold">Summary</h2>
             <p>Geneticist with an MSc in Genetics and pursuing a PhD in clinical embryology, skilled in stem cell counseling and well-versed in embryology from hands-on internships. Seasoned in cancer research and passionate about genetic education as a faculty member for undergraduates.</p>
         </section>
 
-        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+        <section id="skills" class="mt-8 bg-red-200 text-black p-6 rounded-lg shadow-lg fade-in flash">
             <h2 class="text-2xl font-bold">Skills</h2>
             <ul class="list-disc pl-6">
                 <li><strong>Technical Skills:</strong> AI Tools, Bioinformatics, GitHub, Machine Learning, Microsoft Office</li>
@@ -72,7 +96,7 @@
             </ul>
         </section>
 
-        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+        <section id="experience" class="mt-8 bg-red-300 text-black p-6 rounded-lg shadow-lg fade-in flash">
             <h2 class="text-2xl font-bold">Work Experience</h2>
             <div class="mt-4">
                 <h3 class="text-xl font-semibold">Garden City University (March 2023 - March 2024)</h3>
@@ -92,7 +116,7 @@
             </div>
         </section>
 
-        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+        <section id="projects" class="mt-8 bg-red-400 text-black p-6 rounded-lg shadow-lg fade-in flash">
             <h2 class="text-2xl font-bold">Projects</h2>
             <ul class="list-disc pl-6">
                 <li><strong>Molecular Docking Simulations of Phytochemicals with Target Proteins:</strong> Investigating the potential of phytochemicals from <em>Sphagneticola trilobata</em> against breast cancer and cervical cancer target proteins. Technologies used: PyMOL, Chimera, Discovery Studio, AutoDock.</li>
@@ -101,14 +125,15 @@
             </ul>
         </section>
 
-        <section class="mt-8 bg-white text-black p-6 rounded-lg shadow-lg fade-in flash">
+        <section id="languages" class="mt-8 bg-red-500 text-black p-6 rounded-lg shadow-lg fade-in flash">
             <h2 class="text-2xl font-bold">Languages</h2>
             <p>English, Telugu, Kannada, Hindi</p>
         </section>
 
-        <section class="mt-8 bg-white text-black p-6 rounded-lg text-center fade-in flash">
+        <section id="contact" class="mt-8 bg-red-600 text-black p-6 rounded-lg text-center fade-in flash">
             <a href="Reshma_Reddy_Resume.pdf" download class="text-white bg-blue-500 px-4 py-2 rounded-lg flash">Download CV</a>
         </section>
     </div>
 </body>
+
 </html>
